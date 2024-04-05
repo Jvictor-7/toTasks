@@ -4,6 +4,8 @@ import { auth } from "../../firebaseConnection";
 import { signInWithEmailAndPassword } from "firebase/auth"
 import { toast } from "react-toastify"
 
+import Footer from "../../components/Footer"
+
 import './home.css'
 
 const Home = () => {
@@ -62,10 +64,7 @@ const Home = () => {
                 Não possui uma conta? Cadastre-se
             </Link>
 
-            <footer>
-                Projeto pessoal feito por:
-                <a href="https://www.linkedin.com/in/jo%C3%A3o-lima-574a60227/" target="_blank" rel="noreferrer">João Lima</a>
-            </footer>
+            <Footer />
         </div>
     );
 }
